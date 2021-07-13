@@ -30,7 +30,7 @@ useEffect(() => {
     } );
 }, []);
     return (
-        <div  style={{display:'flex', justifyContent:'center', textAlign:'center' , width:'100%'}} >
+        <div  style={{display:'flex', justifyContent:'center', textAlign:'center' , width:'100%',marginBottom:'100px'}} >
           <div  >
    <h2>  Stories</h2>
   <input style={{height:'32px',width:'70%', borderRadius:'10px'}} type="text"  value={data} onChange={(e)=>setdata(e.target.value)}  placeholder="Enter your Story.."/>
