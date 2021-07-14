@@ -10,7 +10,7 @@ export const Routes = () => {
 
       <div className="dropdown" style={{ float: 'right', margin: '10px'  }}>
         <button className="dropbtn">down</button>
-        <div class="dropdown-content"  >
+        <div className="dropdown-content"  >
           <span>   <Link style={{ textDecoration: 'none', color: 'black', fontSize: '20px' }} to="/">Home</Link> </span>
           <span>  <Link style={{ textDecoration: 'none', color: 'black', fontSize: '20px' }} to="/About">About</Link></span>
           <span>  <Link style={{ textDecoration: 'none', color: 'black', fontSize: '20px' }} to="/Contact">Contact</Link></span>

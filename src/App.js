@@ -8,7 +8,7 @@ function App() {
 
     <BrowserRouter>
      <Routes/>
-     <div class="footer">
+     <div className="footer">
   <p>Created By <b>Squard &copy;</b> 2021</p>
 </div>
     </BrowserRouter>
