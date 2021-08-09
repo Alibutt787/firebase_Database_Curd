@@ -62,7 +62,7 @@ useEffect(() => {
 </form>
 </Fade>
 <Fade bottom>
-  { showData? showData.map((val, ind)=> { return <div style={{ textAlign:'left', backgroundColor:'white',opacity:'.7'}} key={ind}>
+  { showData? showData.map((val, ind)=> { return <div style={{color:'black', textAlign:'left', backgroundColor:'white',opacity:'.7'}} key={ind}>
     <p  className="qcont">{val.data}</p>
     <button onClick={()=>{
       const password=prompt(`Enter password to Delete \n " ${val.data} " `);
