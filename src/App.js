@@ -1,18 +1,19 @@
 import './App.css';
 import {BrowserRouter} from 'react-router-dom'
 import { Routes } from './Routes';
+import { Header } from './Header';
+import { Footer } from './footer';
  
 function App() {
+
+  
   return (
 
-
     <BrowserRouter>
-     <Routes/>
-     <div className="footer">
-  <p>Created By <b>Squard &copy;</b> 2021</p>
-</div>
+    <Header />
+     <Routes />
+     <Footer/>
     </BrowserRouter>
-
    
   );
 }
