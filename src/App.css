@@ -5,39 +5,70 @@
 }
 .info {
   box-sizing: border-box;
-  width: 100%;
   padding: 5% 0% 0 0%;
   text-align: center;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 20px ;
+  font-size: 30px;
+  color: black;
+
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 550px;
+  background-color:white;
+  opacity: .9;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(#999, 0.25);
+  padding: 0.75rem;
+  height: 50%;
+  filter: brightness(100%);
+  
 }
 .author {
   display: inline-block;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  background: url(https://i.imgur.com/6DLCsZcb.jpg) center no-repeat;
+  background: url(./images/1624787467568.jpg) top no-repeat;
   background-size: cover;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-  margin-bottom: 3px;
+}
+.author:hover{
+  zoom: 170%;
+ 
+}
+b:hover{
+  zoom: 150%;
+ 
+}
+.typing{
+  height: 200px;
 }
 @media screen and (max-width: 720px) {
   .author {
     width: 150px;
     height: 150px;
   }
-  .info {
-    margin-top: 20%;
+  .info{
+    font-size: 17px;
+    max-width: 300px;
   }
+  .typing{
+    height: 130px;
+  }
+
+ 
+  
 }
 .footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   line-height: 0px;
-  background-color: #b88553;
+  background-color: white;
   opacity: 0.8;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 .qcont:first-letter {
@@ -48,13 +79,12 @@
 }
 
 .dropbtn {
-  background-color: rgb(96, 101, 102);
   border-radius: 10px;
-  color: white;
-  padding: 12px;
-  font-size: 15px;
+  padding: 02px 10px 0px 0px;
+  font-size: 35px;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .dropdown {
@@ -87,15 +117,15 @@
   display: block;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.dropdown:hover .dropbtcol {
+  background-color: #fafafa;
 }
 .App {
   text-align: center;
 }
 .ali .dropdown:hover {
-  color: aqua;
-  height: 250px;
+ 
+  height: 270px;
 }
 .App-logo {
   height: 40vmin;
@@ -150,14 +180,17 @@ input {
 .card {
   margin: 2rem auto;
   display: flex;
+  font-size: 18px;
   flex-direction: column;
   width: 100%;
-  max-width: 250px;
+  color: #504c4c;
+  max-width: 550px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 10px 20px 0 rgba(#999, 0.25);
   padding: 0.75rem;
   height: 50%;
+ 
 }
 
 .card-image {
@@ -189,4 +222,106 @@ input {
 }
 input {
   padding: 20px;
+  height: 43px;
+  font-size: 23px;
+  
+}
+@media screen and (max-width: 720px) {
+ 
+  .card{ 
+    font-size: 20px;
+    max-width: 300px;
+
+  }
+  input {
+    padding: 20px;
+    height: 43px;
+    font-size: 20px;
+  
+     
+  }
+ 
+  
+}
+
+
+.frd{
+
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 750px;
+  background-color: #fff;
+  color: black;
+  opacity: .9;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(#999, 0.25);
+  padding: 0.75rem;
+  height: 50%;
+
+}
+.fireRealTime{
+  padding: 5px;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 550px;
+  background-color: rgb(231, 229, 229);
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px 0 rgba(#999, 0.25);
+  filter: drop-shadow(10px 10px 4px #46464b);
+  height: 50%;
+  
+}
+
+.fireRealTime:hover{
+  zoom: 110%;
+ 
+}
+.fireDataBtn{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+}
+
+.fireDataBtn:hover{
+  background:red;
+  opacity: .8;
+}
+
+@media screen and (max-width: 720px) {
+ 
+  .frd{ 
+    opacity: .9;
+    filter: brightness(100%);
+
+  }
+  
+  .fireRealTime{
+  
+  overflow: hidden;
+  }
+  
+}
+.zoomIcon{
+
+  font-size: 30px;
+}
+.zoomIcon:hover{
+  zoom:140%;
+}
+.IconDiv{
+  display:flex;
+  justify-Content:space-between;
+  margin-Left:30%;
+  margin-Right:30%;
+
+}
+
+@media screen and (max-width: 720px) {
+
+  .IconDiv{
+    margin-Left:20%;
+    margin-Right:20%;
+  }
+
 }

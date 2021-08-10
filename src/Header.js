@@ -2,13 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 import { Fade } from "react-reveal";
+import { HiMenu } from "react-icons/hi";
+import { FaUserFriends ,FaUserAlt,FaKey } from "react-icons/fa";
+import { TiHome  } from "react-icons/ti";
+import { MdContacts  } from "react-icons/md";
+import { ImFilePicture  } from "react-icons/im";
+
 
 export const Header = () => {
   return (
     <div className="ali">
       <Fade top>
         <div className="dropdown" style={{ float: "right", margin: "10px" }}>
-          <button className="dropbtn">down</button>
+          <button className="dropbtn"><HiMenu  className="dropbtcol"/></button>
           <Fade right>
             <div className="dropdown-content">
               <span>
@@ -21,7 +27,7 @@ export const Header = () => {
                   }}
                   to="/"
                 >
-                  Home
+                  Home <TiHome/>
                 </Link>{" "}
               </span>
               <span>
@@ -34,7 +40,7 @@ export const Header = () => {
                   }}
                   to="/frd"
                 >
-                  Friends
+                  Friends <FaUserFriends/>
                 </Link>{" "}
               </span>
               <span>
@@ -47,7 +53,7 @@ export const Header = () => {
                   }}
                   to="/Admin"
                 >
-                  Admin
+                  Admin <FaUserAlt/><FaKey/>
                 </Link>{" "}
               </span>
               <span>
@@ -58,9 +64,9 @@ export const Header = () => {
                     color: "black",
                     fontSize: "20px",
                   }}
-                  to="/About"
+                  to="/pics"
                 >
-                  About
+                  My Pics <ImFilePicture/>
                 </Link>
               </span>
               <span>
@@ -73,7 +79,7 @@ export const Header = () => {
                   }}
                   to="/Contact"
                 >
-                  Contact
+                  Contact <MdContacts/>
                 </Link>
               </span>
             </div>

@@ -24,6 +24,7 @@ export const Admin = () => {
         justifyContent: "center",
         textAlign: "center",
         width: "100%",
+        opacity: '.9'
       }}
     >
       <div className="container">
@@ -32,7 +33,7 @@ export const Admin = () => {
             <div className="card-image">
               <div className="card-heading"></div>
             </div>
-            <span>Admin Panal</span>
+            <span style={{fontSize:'23px'}}>Admin Panal</span>
             <form className="card-form" onSubmit={functionclick}>
               <div className="input" style={{ textAlign: "left" }}>
                 <label className="input-label">User Name</label>

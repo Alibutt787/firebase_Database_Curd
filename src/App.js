@@ -6,11 +6,13 @@ import { Footer } from "./footer";
 
 function App() {
   return (
+
     <BrowserRouter>
       <Header />
       <Routes />
       <Footer />
     </BrowserRouter>
+  
   );
 }
 

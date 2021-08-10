@@ -54,9 +54,10 @@ export const Friends = () => {
         marginBottom: "100px",
       }}
     >
-      <div>
+      <div  className="frd">
         <Fade top>
-          <h2> Stories</h2>
+         
+        <h1><spa style={{borderBottom:'5px solid #4a9efc'}}>Friends  </spa> Stories</h1>
           <form onSubmit={buttonclick}>
             <input
               ref={inputRef}
@@ -67,10 +68,10 @@ export const Friends = () => {
               placeholder="Enter your Story.."
               required
             />
-            <button
+            <button 
               style={{
-                height: "40px",
-                width: "25%",
+                height: "44px",
+                width: "20%",
                 borderRadius: "10px",
                 backgroundColor: "#228BE6",
               }}
@@ -78,22 +79,18 @@ export const Friends = () => {
               Enter
             </button>
           </form>
+        
         </Fade>
         <Fade bottom>
           {showData
             ? showData.map((val, ind) => {
                 return (
-                  <div
-                    style={{
-                      color: "black",
-                      textAlign: "left",
-                      backgroundColor: "white",
-                      opacity: ".7",
-                    }}
+                  <div className="fireRealTime"
+                 
                     key={ind}
                   >
                     <p className="qcont">{val.data}</p>
-                    <button
+                    <button className="fireDataBtn"
                       onClick={() => {
                         const password = prompt(
                           `Enter password to Delete \n " ${val.data} " `
