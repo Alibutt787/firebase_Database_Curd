@@ -1,10 +1,9 @@
 import { ToastContainer, toast, Zoom } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Fade } from "react-reveal";
-import './App.css'
+import "./App.css";
 
 export const Admin = () => {
-  
   function functionclick() {
     toast.error("Your Email or password is Incorrect ❌❌  ", {
       position: "top-center",
@@ -19,18 +18,15 @@ export const Admin = () => {
   return (
     <div
       style={{
-   
         marginBottom: "70px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         textAlign: "center",
         width: "100%",
-
       }}
     >
-    
-        <div className="container">
+      <div className="container">
         <Fade bottom>
           <div className="card">
             <div className="card-image">
@@ -67,22 +63,21 @@ export const Admin = () => {
               </p>
             </div>
           </div>
-          </Fade>
-        </div>
+        </Fade>
+      </div>
 
-        <ToastContainer
-          position="top-center"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          Transition={Zoom}
-        />
-     
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        Transition={Zoom}
+      />
     </div>
   );
 };

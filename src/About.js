@@ -11,18 +11,19 @@ export const About = () => {
     var listRef = storageRef.child("images");
     listRef.listAll().then(function (result) {
       result.items.forEach(function (imgRef) {
-        imgRef.getDownloadURL().then((url) => {
-          document.getElementById("pic").src = url;
-          var text = document.createElement("img");
-          text.src = url;
-          text.width = 250;
-          text.height = 150;
-          text.alt = "picture";
-          document.getElementById("pic").appendChild(text);
-        }).catch((e)=>{
-          toast.info(
-            `Pictures is downloading...`,
-            {
+        imgRef
+          .getDownloadURL()
+          .then((url) => {
+            document.getElementById("pic").src = url;
+            var text = document.createElement("img");
+            text.src = url;
+            text.width = 250;
+            text.height = 150;
+            text.alt = "picture";
+            document.getElementById("pic").appendChild(text);
+          })
+          .catch((e) => {
+            toast.info(`Pictures is downloading...`, {
               position: "center",
               autoClose: 2000,
               hideProgressBar: false,
@@ -30,10 +31,8 @@ export const About = () => {
               pauseOnHover: false,
               draggable: true,
               progress: undefined,
-            }
-          );
-
-        })
+            });
+          });
       });
     });
   });
@@ -56,7 +55,11 @@ export const About = () => {
 
     const ref = firebase.storage().ref(`images/${filesrc.name}`);
     ref.put(filesrc).then((e) => {
-      firebase.storage().ref(`images/${filesrc.name}`).getDownloadURL().then((url) => {
+      firebase
+        .storage()
+        .ref(`images/${filesrc.name}`)
+        .getDownloadURL()
+        .then((url) => {
           toast.success("yahoo! file is uploaded 😄  ", {
             position: "top-center",
             autoClose: 10000,
@@ -74,9 +77,9 @@ export const About = () => {
           text.height = 150;
           text.alt = "picture";
           document.getElementById("pic").appendChild(text);
-        }).catch((e)=>{  toast.info(
-          `sorry File is not uploaded.`,
-          {
+        })
+        .catch((e) => {
+          toast.info(`sorry File is not uploaded.`, {
             position: "top-center",
             autoClose: 12000,
             hideProgressBar: false,
@@ -84,20 +87,19 @@ export const About = () => {
             pauseOnHover: false,
             draggable: true,
             progress: undefined,
-          }
-        );})
+          });
+        });
     });
   }
   return (
     <div
       style={{
-     
         marginBottom: "70px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         textAlign: "center",
-        width: "100%"
+        width: "100%",
       }}
     >
       <div style={{ marginTop: "60px" }}>
@@ -113,7 +115,6 @@ export const About = () => {
         </Fade>
         <Fade bottom>
           <div id="pic"></div>
-
         </Fade>
       </div>
 
