@@ -9,7 +9,6 @@ export const About = () => {
   useEffect(() => {
     var storageRef = firebase.storage().ref();
     var listRef = storageRef.child("images");
-    console.log(listRef);
     listRef.listAll().then(function (result) {
       result.items.forEach(function (imgRef) {
         imgRef.getDownloadURL().then((url) => {

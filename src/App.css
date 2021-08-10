@@ -29,11 +29,11 @@
  }
 }
 .footer {
-  position:fixed;
+  position:absolute;
   left: 0;
   bottom: 0;
   width: 100%; 
-  line-height: 20px; 
+  line-height: 0px; 
    background-color:#b88553;
   opacity: .8;
   color: white;

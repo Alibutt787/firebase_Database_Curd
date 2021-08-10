@@ -19,12 +19,14 @@ export const Admin = () => {
   return (
     <div
       style={{
+   
         marginBottom: "70px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         textAlign: "center",
-        
+        width: "100%",
+
       }}
     >
     
