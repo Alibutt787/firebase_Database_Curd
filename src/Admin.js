@@ -2,6 +2,8 @@ import { ToastContainer, toast, Zoom } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Fade } from "react-reveal";
 import "./App.css";
+import { FaUserLock } from 'react-icons/fa'
+
 
 export const Admin = () => {
   function functionclick() {
@@ -33,7 +35,7 @@ export const Admin = () => {
             <div className="card-image">
               <div className="card-heading"></div>
             </div>
-          <span>  <b style={{borderBottom:'5px solid #4a9efc'}}>Admin </b> panal</span>
+          <span>  <b style={{borderBottom:'5px solid #4a9efc'}}>Admin </b> panal <FaUserLock/></span>
 
             <form className="card-form" onSubmit={functionclick}>
               <div className="input" style={{ textAlign: "left" }}>
