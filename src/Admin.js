@@ -18,7 +18,7 @@ export const Admin = () => {
   return (
     <div
       style={{
-        marginBottom: "70px",
+        marginBottom: "40px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -33,7 +33,8 @@ export const Admin = () => {
             <div className="card-image">
               <div className="card-heading"></div>
             </div>
-            <span style={{fontSize:'23px'}}>Admin Panal</span>
+          <span>  <b style={{borderBottom:'5px solid #4a9efc'}}>Admin </b> panal</span>
+
             <form className="card-form" onSubmit={functionclick}>
               <div className="input" style={{ textAlign: "left" }}>
                 <label className="input-label">User Name</label>
@@ -54,12 +55,12 @@ export const Admin = () => {
               </div>
 
               <div className="action">
-                <button className="action-button">Get started</button>
+                <button style={{width:'100px', height:'40px',borderRadius:'20px' ,backgroundColor:'#4495d4'}} className="action-button"><b>Get started</b></button>
               </div>
             </form>
             <div className="card-info">
               <p>
-                By signing up you are agreeing to our{" "}
+                By signing up you are agreeing to our
                 <a href="https://google.com">Terms and Conditions</a>
               </p>
             </div>

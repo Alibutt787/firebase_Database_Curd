@@ -183,7 +183,7 @@ input {
   font-size: 18px;
   flex-direction: column;
   width: 100%;
-  color: #504c4c;
+  color: #0c0b0b;
   max-width: 550px;
   background-color: #fff;
   border-radius: 10px;
@@ -223,7 +223,7 @@ input {
 input {
   padding: 20px;
   height: 43px;
-  font-size: 23px;
+  font-size: 17px;
   
 }
 @media screen and (max-width: 720px) {

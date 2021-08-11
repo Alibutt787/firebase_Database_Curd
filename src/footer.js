@@ -6,7 +6,7 @@ export const Footer = () => {
     <div>
       <div className="footer">
         <p>
-        Created By <b>Ali Butt &copy;</b> 2021
+         Copyright © 2021 <b>Ali Butt</b>
         </p>
       </div>
     </div>

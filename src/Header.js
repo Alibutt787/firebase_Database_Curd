@@ -64,9 +64,9 @@ export const Header = () => {
                     color: "black",
                     fontSize: "20px",
                   }}
-                  to="/pics"
+                  to="/Gallery"
                 >
-                  My Pics <ImFilePicture/>
+                  Gallery <ImFilePicture/>
                 </Link>
               </span>
               <span>

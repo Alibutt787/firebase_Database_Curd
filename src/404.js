@@ -23,7 +23,7 @@ export const PageNotFound = () => {
     >
       <Fade bottom>
         <div className="info" style={{ marginTop: "40px",fontSize:'20px', }}>
-        <h1><span style={{borderBottom:'5px solid #4a9efc'}}>Page </span>Error    <BiError/></h1>
+        <h1><span style={{borderBottom:'5px solid #4a9efc'}}>Page Not </span>Found   <BiError/></h1>
        
  
     <img src={pic} alt="Trulli" width="250px" />

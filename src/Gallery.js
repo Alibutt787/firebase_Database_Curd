@@ -4,9 +4,9 @@ import { useEffect } from "react";
 import { ToastContainer, toast, Zoom } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Fade } from "react-reveal";
-import { FaHome } from "react-icons/fa";
+import { FaHome,FaDownload } from "react-icons/fa";
 
-export const MyPics = () => {
+export const Gallery = () => {
   useEffect(() => {
     var storageRef = firebase.storage().ref();
     var listRef = storageRef.child("images");
@@ -106,7 +106,8 @@ export const MyPics = () => {
     >
       <div className="info" style={{ marginTop: "20px",maxWidth:'1200px' }}>
         <Fade top>
-          <input  style={{height:'60px'}}
+        <h3><span style={{borderBottom:'5px solid #4a9efc'}}>Gallery</span>  <FaDownload/></h3>
+       <input  style={{height:'60px'}}
             type="file"
             name="Picture"
             onChange= {(e) => {
@@ -130,6 +131,7 @@ export const MyPics = () => {
               }}
             required
           />
+        
           <br />
           <br />
         </Fade>
@@ -137,7 +139,7 @@ export const MyPics = () => {
           <div id="pic"></div>
         </Fade>
         <span>
-        Go Back to
+         Back to
         <Link style={{ color: "green" }} to="/">
         
           <b><FaHome/></b>

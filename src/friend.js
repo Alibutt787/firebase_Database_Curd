@@ -57,7 +57,7 @@ export const Friends = () => {
       <div  className="frd">
         <Fade top>
          
-        <h1><spa style={{borderBottom:'5px solid #4a9efc'}}>Friends  </spa> Stories</h1>
+        <h1><span style={{borderBottom:'5px solid #4a9efc'}}>Friends  </span> Stories</h1>
           <form onSubmit={buttonclick}>
             <input
               ref={inputRef}

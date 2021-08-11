@@ -44,7 +44,7 @@ export const Contect = () => {
  <br/>
           </div>
           <span>
-            Go Back to
+             Back to
             <Link style={{ color: "green" ,textDecoration:'none'}} to="/">
               <b><FaHome/></b>
             </Link>{" "}
