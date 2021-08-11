@@ -18,8 +18,8 @@ export const Gallery = () => {
             document.getElementById("pic").src = url;
             var text = document.createElement("img");
             text.src = url;
-            text.width = 250;
-            text.height = 150;
+            text.width = 290;
+            text.height = 180;
             text.alt = "picture";
             document.getElementById("pic").appendChild(text);
           })
@@ -75,8 +75,8 @@ export const Gallery = () => {
           document.getElementById("pic").src = url;
           var text = document.createElement("img");
           text.src = url;
-          text.width = 250;
-          text.height = 150;
+          text.width = 290;
+          text.height = 180;
           text.alt = "picture";
           document.getElementById("pic").appendChild(text);
         })
