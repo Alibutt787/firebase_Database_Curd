@@ -115,9 +115,9 @@ export const Gallery = () => {
                   `Plz Enter Security key `
                 );
                 console.log(password);
-                if (password === "551") {
+                if (password === "8889") {
                upload(e);
-                } else if (password !== "9998") {
+                } else if (password !== "8889") {
                   toast.warn("Incorrect Password 🧛  ", {
                     position: "top-center",
                     autoClose: 2000,
