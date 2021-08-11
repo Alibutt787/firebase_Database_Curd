@@ -11,7 +11,6 @@
   margin-top: 20px ;
   font-size: 30px;
   color: black;
-
   margin: 2rem auto;
   width: 100%;
   max-width: 550px;
@@ -249,7 +248,7 @@ input {
 
   margin: 2rem auto;
   width: 100%;
-  max-width: 750px;
+  max-width: 950px;
   background-color: #fff;
   color: black;
   opacity: .9;
@@ -260,10 +259,11 @@ input {
 
 }
 .fireRealTime{
+  text-align: left;
   padding: 5px;
   margin: 2rem auto;
   width: 100%;
-  max-width: 550px;
+  max-width: 700px;
   background-color: rgb(231, 229, 229);
   color: black;
   border-radius: 8px;
@@ -278,27 +278,47 @@ input {
  
 }
 .fireDataBtn{
-  width: 50px;
-  height: 50px;
-  border-radius:50%;
+  width: 90px;
+  height: 33px;
+  border-radius:10%;
+  
 }
 
 .fireDataBtn:hover{
   background:red;
   opacity: .8;
 }
-
+.storyInput{
+ height: 32px;
+  width: 50%;
+   border-radius: 10px;
+   margin-top:30px; 
+  }
 @media screen and (max-width: 720px) {
- 
+  .storyInput{
+    height: 32px;
+     width: 70%;
+      border-radius: 10px;
+      margin-top:20px; 
+     }
+  .fireDataBtn{
+    width: 70px;
+    height: 25px;
+    border-radius:10%;
+
+  }
   .frd{ 
     opacity: .9;
     filter: brightness(100%);
 
+   
   }
   
   .fireRealTime{
   
   overflow: hidden;
+  max-width: 350px;
+ 
   }
   
 }

@@ -104,7 +104,7 @@ export const Gallery = () => {
         width: "100%"
       }}
     >
-      <div className="info" style={{ marginTop: "20px",maxWidth:'1200px' }}>
+      <div className="info" style={{ maxWidth:'1200px' }}>
         <Fade top>
         <h3><span style={{borderBottom:'5px solid #4a9efc'}}>Gallery</span>  <FaDownload/></h3>
        <input  style={{height:'60px'}}

@@ -38,19 +38,6 @@ export const Header = () => {
                     color: "black",
                     fontSize: "20px",
                   }}
-                  to="/frd"
-                >
-                  Friends <FaUserFriends/>
-                </Link>{" "}
-              </span>
-              <span>
-                {" "}
-                <Link
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    fontSize: "20px",
-                  }}
                   to="/Admin"
                 >
                   Admin <FaUserAlt/><FaKey/>
@@ -68,6 +55,19 @@ export const Header = () => {
                 >
                   Gallery <ImFilePicture/>
                 </Link>
+              </span>
+              <span>
+                {" "}
+                <Link
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                    fontSize: "20px",
+                  }}
+                  to="/frd"
+                >
+                  Friends <FaUserFriends/>
+                </Link>{" "}
               </span>
               <span>
                 {" "}
