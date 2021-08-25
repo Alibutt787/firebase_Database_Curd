@@ -1,21 +1,43 @@
+import React,{useState} from "react";
 import { ToastContainer, toast, Zoom } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Fade } from "react-reveal";
 import "./App.css";
 import { FaUserLock } from 'react-icons/fa'
+import firebase from "firebase";
+import { Signup } from "./Signup/SignUp";
 
 
 export const Admin = () => {
-  function functionclick() {
-    toast.error("Your Email or password is Incorrect ❌❌  ", {
-      position: "top-center",
-      autoClose: 6000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
+
+  const [email, setemail]=useState("");
+  const [pwd, setpwd]=useState("");
+
+  function functionclick(e) {
+ e.preventDefault();
+    // toast.error("Your Email or password is Incorrect ❌❌  ", {
+    //   position: "top-center",
+    //   autoClose: 6000,
+    //   hideProgressBar: false,
+    //   closeOnClick: true,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    //   progress: undefined,
+    // });
+    firebase.auth().signInWithEmailAndPassword(email, pwd)
+    .then((userCredential) => {
+      // Signed in
+      var user = userCredential.user;
+      console.log('signed');
+      alert('hahaha')
+      // ...
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log('signedError');
     });
+
   }
   return (
     <div
@@ -44,6 +66,7 @@ export const Admin = () => {
                   type="text"
                   className="input-field"
                   placeholder="AliButt12@gmail.com"
+                  onChange={e=>setemail(e.target.value)}
                   required
                 />
               </div>
@@ -53,7 +76,9 @@ export const Admin = () => {
                 style={{ textAlign: "left", marginBottom: "10px" }}
               >
                 <label className="input-label">Password</label>
-                <input type="password" className="input-field" required />
+                <input type="password" className="input-field" required
+                    onChange={e=>setpwd(e.target.value)}
+                />
               </div>
 
               <div className="action">
@@ -68,8 +93,10 @@ export const Admin = () => {
             </div>
           </div>
         </Fade>
-      </div>
 
+      
+      </div>
+     
       <ToastContainer
         position="top-center"
         autoClose={5000}

@@ -21,7 +21,7 @@ export const Gallery = () => {
             text.width = 290;
             text.height = 230;
             text.alt = "picture";
-            document.getElementById("pic").appendChild(text);
+            document.getElementById("pic").prepend(text);
           })
           .catch((e) => {
             toast.info(`Pictures is downloading...`, {
@@ -78,7 +78,7 @@ export const Gallery = () => {
           text.width = 290;
           text.height = 230;
           text.alt = "picture";
-          document.getElementById("pic").appendChild(text);
+          document.getElementById("pic").prepend(text);
         })
         .catch((e) => {
           toast.info(`sorry File is not uploaded.`, {
@@ -104,7 +104,7 @@ export const Gallery = () => {
         width: "100%"
       }}
     >
-      <div className="info" style={{ maxWidth:'1200px' }}>
+      <div className="info picinfo"     >
         <Fade top>
         <h3><span style={{borderBottom:'5px solid #4a9efc'}}>Gallery</span>  <FaDownload/></h3>
        <input  style={{height:'60px'}}

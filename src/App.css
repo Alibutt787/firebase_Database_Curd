@@ -188,15 +188,22 @@ input {
   border-radius: 10px;
   box-shadow: 0 10px 20px 0 rgba(#999, 0.25);
   padding: 0.75rem;
-  height: 50%;
+  height: 40%;
  
 }
-
+.picinfo{
+  margin-bottom: "70px";
+  display: "flex";
+  flex-direction: "column";
+  justify-content: "center";
+  text-align: "center";
+  max-width: 80%;
+}
 .card-image {
   border-radius: 8px;
   overflow: hidden;
-  padding-bottom: 65%;
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/curdpractise.appspot.com/o/images%2F1624787467568.jpg?alt=media&token=0aa905e9-ab52-4a5c-89b2-c5571d6b752c");
+  padding-bottom: 50%;
+  background-image: url("./images/1624787467568.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 5%;
@@ -226,7 +233,10 @@ input {
   
 }
 @media screen and (max-width: 720px) {
- 
+ .picinfo{
+
+  max-width: 100%;
+}
   .card{ 
     font-size: 20px;
     max-width: 300px;
