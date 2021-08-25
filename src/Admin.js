@@ -1,11 +1,9 @@
 import React,{useState} from "react";
-import { ToastContainer, toast, Zoom } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Fade } from "react-reveal";
 import "./App.css";
 import { FaUserLock } from 'react-icons/fa'
-import firebase from "firebase";
-import { Signup } from "./Signup/SignUp";
+
 
 
 export const Admin = () => {
@@ -15,28 +13,8 @@ export const Admin = () => {
 
   function functionclick(e) {
  e.preventDefault();
-    // toast.error("Your Email or password is Incorrect ❌❌  ", {
-    //   position: "top-center",
-    //   autoClose: 6000,
-    //   hideProgressBar: false,
-    //   closeOnClick: true,
-    //   pauseOnHover: true,
-    //   draggable: true,
-    //   progress: undefined,
-    // });
-    firebase.auth().signInWithEmailAndPassword(email, pwd)
-    .then((userCredential) => {
-      // Signed in
-      var user = userCredential.user;
-      console.log('signed');
-      alert('hahaha')
-      // ...
-    })
-    .catch((error) => {
-      var errorCode = error.code;
-      var errorMessage = error.message;
-      console.log('signedError');
-    });
+  
+    alert (`Wrong Email  ${email} and Password ${pwd}`);
 
   }
   return (
@@ -97,18 +75,7 @@ export const Admin = () => {
       
       </div>
      
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        Transition={Zoom}
-      />
+      
     </div>
   );
 };
